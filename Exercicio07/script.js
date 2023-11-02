@@ -14,9 +14,9 @@ const calcular = () => {
     if (custoFabrica == "" || percDistribuidor == "" || percImposto == "") {
         alert("Todos os dados devem ser informados para prosseguir para prosseguir.")
     } else {
-        let valorFinal = custoFabrica * percImposto;
-        valorFinal = valorFinal + custoFabrica * percDistribuidor
-        valorFinal = valorFinal + custoFabrica
+        let valorFinal = (custoFabrica * percImposto) / 100 +
+        (custoFabrica * percDistribuidor) /100 ;
+        valorFinal = (+valorFinal + +custoFabrica);
 
         mostrarResultado(valorFinal);
     }
@@ -28,5 +28,5 @@ botao.addEventListener('click', function() {
 
 const mostrarResultado = (exibir) => {
     htmlMostrador.innerHTML = ""
-    htmlMostrador.innerHTML += `<h2>O preço final é: ${exibir}</h2>`
+    htmlMostrador.innerHTML += `<h2>O preço final é: R$${exibir}</h2>`
 }
