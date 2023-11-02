@@ -11,14 +11,28 @@
     </br>
 
     <div class="calculadora">
-        <label for="numeroPrimeiro">Primeiro Número: </label>
-        <input type="number" name="numeroPrimeiro" id="numeroPrimeiro">
-
-        <label for="numeroSegundo">Segundo Número: </label>
-        <input type="number" name="numeroSegundo" id="numeroSegundo">
-
+        <div>
+            <label for="numeroPrimeiro">Primeiro Número: </label>
+            <input type="number" name="numeroPrimeiro" id="numeroPrimeiro">
+        </div>
+        <div style="padding-top: 5px;">
+            <label for="numeroSegundo">Segundo Número: </label>
+            <input type="number" name="numeroSegundo" id="numeroSegundo">
+        </div>
+        <div style="padding-top: 5px;">
+            <label for="operacao">Operação Matemática:</label>
+            <select name="operacao" id="operacao">
+                <option value="+">+ Adição</option>
+                <option value="-">- Subtração</option>
+                <option value="*">* Multiplicação</option>
+                <option value="/">/ Divisão</option>
+            </select>
+        </div>
+        <div style="padding-top: 5px;">
+            <button id="calcular" style="padding-top: 5px; padding-bottom: 5px; padding-left: 119px; padding-right: 119px;">
+                Calcular</button>
+        </div>
     </div>
-    
 
     <div id="mostrador">
     </div>
